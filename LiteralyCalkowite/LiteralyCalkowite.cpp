@@ -13,7 +13,21 @@ int main(){
 
     // w taki sposób można sprawdzić jaki zakres mają liczby (tylko trzeba dodać #include <limits>)
     std::cout << "zakres int: od " << std::numeric_limits<int>::min() << " do " << std::numeric_limits<int>::max() << "\n";
-    std::cout << "w bitach " << sizeof(int);
+    std::cout << "w bitach " << sizeof(int) << "\n";
+
+    // format specifiers:
+
+    std::cout << "18 w hex: " << std::hex << 18 << "\n";
+
+    std::cout << std::noshowpoint << 12.00 << "\n";
+
+    std::cout << std::showpos << 4;
+
+    std::cout << std::showbase << std::oct << 13 << "\n";
+
+    std::cout << std::fixed << 12e02 << std::scientific << 12e02;
+
+    //#include <iomanip> pozwala na wiecej format specifiers
 
     return 0;
 }
