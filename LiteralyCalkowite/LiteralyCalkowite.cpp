@@ -28,6 +28,7 @@ int main(){
     std::cout << std::fixed << 12e02 << std::scientific << 12e02;
 
     //#include <iomanip> pozwala na wiecej format specifiers
+    // std::setfill('0') wiodace znaki
 
     return 0;
 }
